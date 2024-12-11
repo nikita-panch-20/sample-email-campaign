@@ -8,39 +8,29 @@
     body {
         max-width: 60vw;
         align-content: center;
-        /* padding-left: 20vw; */
-        font-family: Arial, sans-serif;
-        /* margin: 0; */
+        font-family: Helvetica, Arial, sans-serif;
     }
-
     table {
       width: 100%;
       border-collapse: separate;
     }
-
     .container {
       width: 100%;
       margin: 0 30vw 0 10vw;
       background-color: #ffffff;
       border: 0.2vw solid #004b35;
-      /* border-style: solid;
-      border-radius: 4vw;
-      border-color: #004b35;
-      border-width: 0.3vw; */
       border-radius: 4vw;
       margin-left: 20vw;
     }
-
-    .header, .feature-section, .footer {
+    .header, .footer {
       text-align: center;
-      padding: 20px;
-    }
-    .feature-section{
-      background-color: #4caf50;
-      /* border-radius: 4vw; */
     }
     .header {
-      background-color: #4caf50;
+      position: relative;
+      z-index: 1;
+      /* background-color: #4caf50; */
+      background-image: url(/Users/nikitapanchadhar/Downloads/background.png);
+      /* opacity: 0.2; */
       color: white;
       border-radius: 4vw;
     }
@@ -64,10 +54,6 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-    /* .header img {
-      max-width: 80%;
-      height: auto;
-    } */
      .second-banner button{
         text-align: center;
         padding: 1vw;
@@ -86,11 +72,6 @@
         margin-right: -50vw;
         margin-left: 20vw;
     }
-    .feature-section img {
-      width: 100%;
-      max-width: 300px;
-    }
-
     .features {
       display: flex;
       justify-content: center;
@@ -98,7 +79,6 @@
       gap: 3vw;
       flex-wrap: wrap;
     }
-
     .feature-box {
       background-color: white;
       border: 0.2vw solid #ddd;
@@ -112,7 +92,7 @@
     .feature-box p{
       font-size: 1.2vw;
     }
-    .footer {
+    .footer{
       background-color: #ffffff;
       color: black;
       font-size: 1vw;
@@ -131,17 +111,15 @@
     }
     .social-icons img {
       margin: 5px;
-      width: 24px;
-      height: 24px;
+      width: 4vw;
+      height: 4vw;
     }
-
+    .image-banner{
+      width: 100%;
+    }
     @media (max-width: 768px) {
       .second-banner p{
         font-size: 1.8vw !important;
-      }
-      .features {
-        flex-direction: column;
-        align-items: center;
       }
     }
     @media (max-width: 467px) {
@@ -152,82 +130,43 @@
         font-size: 1.8vw;   
       }
     }
-    @media (max-width: 478px) {
-      .logo{
-        margin-top: -20vw !important;
-        margin-bottom: 2vw !important;
-      }
-    }
-    @media (max-width: 1150px) {
-      .logo{
-        margin-left: 8vw !important;
-      }
-    }
   </style>
 </head>
 <body>
   <table class="container">
-    <a href="https://www.stoxkart.com">
-    <thead>
-    <tr>
-      <td>
-        <table class="header">
-          <tr>
-              <td>
-                <img class="logo" src="assets/stoxkart.svg" alt="Stoxkart Logo">
-              </td>
-          </tr>
-          <tr>
-              <td>
-                <img class="banner" src="assets/Lptop.png" alt="Laptop">
-              </td>
-              <td>
-                <h1 style="margin-top: -4vw; margin-bottom: -4vw;">Trade Faster with our Seamless Navigation Feature</h1>
-              </td>
-            </td>
-          </tr>
-        </tbody>
-        </table>
-      </td>
-    </tr>
-  </thead>
-    </a>
-    <a href="https://www.stoxkart.com">
-    <tr>
+      <thead>
+        <tr>
+          <td>
+            <a href="https://www.stoxkart.com" target="_blank" style="text-decoration: none;">
+              <img class="image-banner" style="border-radius: 4vw;" src="/Users/nikitapanchadhar/Downloads/banner-1.png" alt="banner-1">
+          </a>
+          </td>
+        </tr>
+      </thead> 
+      <tr>
         <td>
-            <table class="second-banner">
-                <tr>
-                    <td>
-                        <p style="padding-left: 4vw !important;">Hey Trader... 
-                        <p style="padding: 0; padding-left: 4vw !important;">Trade on the fly with our new Single-Hand Navigation!</p>
-                        <p style="padding-left: 4vw !important;">Quick, easy, and efficient—monitoring your stocks has never been smoother.</p>
-                        <button><b style="padding-bottom: 0; font-size: 1.4vw !important;">Get the Stoxkart app today</b><p style="padding-top: 0vw; padding-bottom: 0vw; font-size: 1.4vw !important;">Streamlined trading at your fingertips!</p></button>
-                    </td>
-                </tr>
-            </table>
+          <a href="https://www.stoxkart.com" target="_blank" style="text-decoration: none; color: black;">
+          <table class="second-banner">
+            <tr>
+              <td>
+                <p style="padding-left: 4vw !important;">Hey Trader... 
+                <p style="padding: 0; padding-left: 4vw !important;">Trade on the fly with our new Single-Hand Navigation!</p>
+                <p style="padding-left: 4vw !important;">Quick, easy, and efficient—monitoring your stocks has never been smoother.</p>
+                <button><b style="padding-bottom: 0; font-size: 1.4vw !important;">Get the Stoxkart app today</b><p style="padding-top: 0vw; padding-bottom: 0vw; font-size: 1.4vw !important;">Streamlined trading at your fingertips!</p></button>
+              </td>
+            </tr>
+          </table>
+        </a>
         </td>
-    </tr>
+      </tr>
     <tr>
       <td>
-        <table class="feature-section">
-          <tr>
-            <td>
-              <div class="features">
-                <div class="feature-box">
-                  <h3><b>Single Hand Navigation</b></h3>
-                  <p>Navigate through your selected stocks smoothly & easily.</p>
-                </div>
-                <div class="feature-box">
-                  <h3><b>Realtime Charts</b></h3>
-                  <p>Enhance your stock analytics with real-time charts.</p>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
+        <a href="https://www.stoxkart.com" target="_blank" style="text-decoration: none; color: black;">
+          <img class="image-banner" src="/Users/nikitapanchadhar/Downloads/banner-2.png" alt="banner-2">
+        </a>
       </td>
     </tr>
-    </a>
+  </a>
     <tr>
       <td>
         <table class="footer">
@@ -236,12 +175,13 @@
               <p>Disclaimer:</p><p>Moneywise Finvest Ltd. Regd. Office (Stoxkart) : 11/6B Shanti Chamber, Pusa Road, New Delhi- 110005,|
                 SEBI Reg. No. INZ000196835 |Member Id:NSE:90161|BSE:6690|MCX:56325|MF Distributor ARN No.156808|
                 </p>
-                <img class="footer-logo" src="assets/stoxkart.svg" alt="Stoxkart Logo">
+                <img class="footer-logo" src="/Users/nikitapanchadhar/Downloads/Stoxkart-email-campaign/assets/stoxkart.svg" alt="Stoxkart Logo">
               <div class="social-icons">
-                <img src="assets/facebook.png" alt="Facebook">
-                <img src="assets/instagram.png" alt="Instagram">
-                <img src="assets/linkedin.png" alt="LinkedIn">
-                <img src="assets/X.png" alt="Twitter">
+                <a href="https://www.youtube.com/@StoxkartDaily" target="_blank"><img src="/Users/nikitapanchadhar/Downloads/Stoxkart-email-campaign/assets/youtube.png" alt="Youtube"></a>
+                <a href="https://www.facebook.com/stoxkartonline" target="_blank"><img src="/Users/nikitapanchadhar/Downloads/Stoxkart-email-campaign/assets/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/stoxkartonline/" target="_blank"><img src="/Users/nikitapanchadhar/Downloads/Stoxkart-email-campaign/assets/instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/company/stoxkart/" target="_blank"><img src="/Users/nikitapanchadhar/Downloads/Stoxkart-email-campaign/assets/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://x.com/stoxkartonli" target="_blank"><img src="/Users/nikitapanchadhar/Downloads/Stoxkart-email-campaign/assets/X.png" alt="Twitter"></a>
               </div>
             </td>
           </tr>
